@@ -1,0 +1,188 @@
+
+/* 
+New Perspectives on HTML and XHTML
+Author: Cameron Anglin
+Date: July 2nd, 2012
+Text Editor: Notepad++
+Filename: gresham.css */
+
+html,body {
+height:100%;
+margin:0;
+padding:0;
+}
+
+#head-container {
+background:#FFC;
+color:#000;
+}
+
+#header {
+background:#F0CC8E;
+font-family: Georgia, Serif;
+width:860px;
+margin:0 auto;
+padding:20px;
+}
+
+#navigation-container {
+background:#582315;
+color:#000;
+float:left;
+width:100%;
+}
+
+#navigation {
+font-family:Copperplate / Copperplate Gothic Light, sans-serif;
+width:900px;
+margin:0 auto;
+}
+
+#navigation ul {
+margin:0;
+padding:0;
+}
+
+#navigation ul li {
+display:inline;
+list-style-type:none;
+}
+
+/* Contexual Selector Styling */
+#navigation li a {
+border-right:1px solid #fff;
+color:#fff;
+display:block;
+float:left;
+text-decoration:none;
+padding:5px 10px;
+}
+
+/* hypertext rollover effect */
+#navigation li a:hover {
+background:#909312;
+}
+
+#content-container {
+background:#FFC;
+color:#000;
+float:left;
+width:100%;
+}
+
+#content-container2 {
+width:900px;
+margin:0 auto;
+}
+
+#content-container3 {
+float:left;
+width:900px;
+}
+
+#content {
+clear:left;
+display:inline;
+float:left;
+font-family:Georgia, Serif;
+width:560px;
+margin:0 0 0 30px;
+padding:20px 0;
+}
+
+#content h1 {
+color:#6D3625;
+padding-left:5%;
+text-align:center;
+font-family: Verdana, Geneva, sans-serif;
+}
+
+/* pushing text off of nav header a little */
+#content h2 {
+padding: 50px 10px 10px 10px;
+margin: 5px 5px 5px 5px;
+}
+
+#right {
+display:inline;
+float:right;
+width:240px;
+margin:0 20px 0 0;
+padding:20px 0;
+}
+
+/* pushing opera list off of nav header  */
+#right h3 {
+padding: 50px 10px 10px 10px;
+margin: 5px 5px 5px 5px;
+}
+
+#footer-container {
+background-color:#582315;
+clear:left;
+color:#fff;
+}
+
+/* positioning */
+#footer {
+height:1%;
+text-align:right;
+width:900px;
+margin:0 auto;
+padding:20px;
+}
+
+/* paragraph image */
+.floatright {
+border:1px solid #000;
+float:right;
+margin:5px;
+}
+
+/* this effect taken from designshack.net, modded heavily to work with my code, won't validate, yet is recognized to be wrong :) */
+#photos {
+transition:all .5s ease;
+-moz-transition:all .5s ease;
+-o-transition:all .5s ease;
+-webkit-transition:all .5s ease-out;
+-ms-transition:all .5s ease;
+float:left;
+margin:5px;
+padding:5px 5px 5px 300px;
+}
+
+#photos img:hover {
+transform:rotate(-7deg);
+-moz-transform:rotate(-7deg);
+-o-transform:rotate(-7deg);
+-webkit-transform:rotate(-7deg);
+-ms-transform:rotate(-7deg);
+}
+
+/* ie puts this in footer container, ff floats it above it */
+#valid {
+bottom:5%;
+left:5%;
+position:absolute;
+}
+
+/* all other link styles */
+a:link {
+color:#153E7E;
+text-decoration:none;
+}
+
+a:hover {
+color:#909312;
+text-decoration:none;
+}
+
+#header h1,#content h2,#right h3 {
+color:#582315;
+margin:0;
+}
+
+a:visited,a:active {
+text-decoration:none;
+}
+

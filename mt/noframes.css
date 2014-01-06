@@ -1,0 +1,97 @@
+/*
+New Perspectives on HTML and XHTML
+Author: Cameron Anglin
+Date: July 26th, 2012
+Text Editor: Notepad++
+Filename: noframes.css
+*/
+
+*
+{
+	margin:0;
+	padding:0;
+}
+
+body
+{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:14px;
+}
+
+#head
+{
+	background-color:#FFF;
+	width:720px;
+}
+
+#pageContent
+{
+	left:5px;
+	position:absolute;
+	top:45px;
+	width:720px;
+}
+
+h2
+{
+	color:#9d5759;
+	font-size:24px;
+	font-weight:400;
+	letter-spacing:5px;
+	margin:0 0 15px;
+}
+
+h4
+{
+	border-top:1px solid #000;
+	color:#9d5759;
+	font-size:18px;
+	font-weight:400;
+	letter-spacing:3px;
+	margin:10px 0;
+}
+
+p
+{
+	margin-bottom:10px;
+}
+
+ul
+{
+	color:#FFF;
+	font-size:12px;
+	line-height:2;
+	list-style-type:none;
+	margin-left:10px;
+	margin-top:15px;
+}
+
+ul ul
+{
+	margin-left:20px;
+	margin-top:0;
+}
+
+ul li a
+{
+	color:#FFF;
+	text-decoration:none;
+}
+
+ul li a:visited
+{
+	color:#FFF;
+}
+
+ul li a:active
+{
+	color:#FFF;
+}
+
+ul li a:hover
+{
+	color:#FF0;
+	text-decoration:overline underline;
+}
+
+

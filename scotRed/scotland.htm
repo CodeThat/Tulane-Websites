@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+		"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<!--
+New Perspectives on HTML and XHTML
+Author: Cameron Anglin
+Date: July 30th, 2012
+Text Editor: Notepad++
+Filename: scotland.htm
+-->
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+   <title>Tour Scotland</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+   <link rel="stylesheet" type="text/css" href="style.css" />
+   <!--<style type="text/css"> enclose styles in CDATA section for parser
+      <![CDATA[
+	  body {background-color: black; color: white}
+	  ]]>
+   </style>-->
+</head>
+
+<body>
+<p align="center">
+   <img src="tslogo.gif" alt="Tour Scotland"></img>
+   <br />
+   Explore Scotland by joining us on one of our four tours listed below.
+   <br /><br />
+   <iframe src="laketour.htm" width="600" height="200" name="tours">
+   </iframe>
+   <br /><br />
+   <img src="tourlist.gif" usemap="#tourmap" border="0" alt="list"></img>
+   <map id="tourmap">
+      <area shape="rect" coords="17,0,158,59" href="laketour.htm" target="tours" alt="lake"></area> 
+      <area shape="rect" coords="159,0,306,59" href="casttour.htm" target="tours" alt="cast"></area>
+      <area shape="rect" coords="307,0,454,59" href="hightour.htm" target="tours" alt="high"></area>
+      <area shape="rect" coords="455,0,593,59" href="hebdtour.htm" target="tours" alt="hebd"></area>
+   </map>
+</p>
+</body>
+
+</html>

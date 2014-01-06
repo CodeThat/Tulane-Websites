@@ -1,0 +1,37 @@
+@media print  {
+/* 
+New Perspectives on HTML and XHTML
+Author: Cameron Anglin
+Date: July 2nd, 2012
+Text Editor: Notepad++
+Filename: printer.css 
+
+ change font to printable font */
+p {
+font-family:times,serif;
+font-size:10px;
+}
+}
+
+/* center some text */
+#content h1,#header h1 {
+font-family:times,serif;
+font-size:14px;
+color:#000;
+text-align:center;
+}
+
+/* Set background of all pages to white */
+#home,#mozart,#bizet,#puccini,#verdi,#wagner {
+background-color:#FFF;
+}
+
+/* margins */
+@page {
+margin:0.5cm;
+}
+
+/* hide these when printing */
+#section-navigation,#navigation-container,#footer,#content ul,#navigation ul,#content h3,#photos img,a:link,a:visited,a:hover,a:active {
+display:none;
+}

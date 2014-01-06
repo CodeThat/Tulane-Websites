@@ -1,0 +1,309 @@
+<!-- 
+   New Perspectives on HTML and XHTML
+   Tutorial 5
+   Case Problem 2
+
+   February at the Chamberlain Civic Center
+   Author: Cameron Anglin
+   Date:  July 14th, 2012
+
+   Filename:         feb.html
+   Supporting files: bottom.jpg, bottomleft.jpg, bottomright.jpg, calendar.css, 
+                     ccc.css, ccc.jpg, left.jpg, right.jpg, tab.jpg, top.jpg, 
+                     topleft.jpg, topright.jpg
+-->
+
+   <title>February at the Chamberlain Civic Center</title>
+<html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<html>
+<head>
+   <title>February at the Chamberlain Civic Center</title>
+   <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+   <link rel="stylesheet" type="text/css" href="ccc.css" />
+   <link rel="stylesheet" type="text/css" href="cal.css" />
+</head>
+
+
+
+<body>
+   <div id="heading">
+      <img src="ccc.jpg" alt="The Chamberlain Civic Center" />
+      <ul>
+         <li><a href="http://cpst.tulane.edu/~canglin/cpst240010/ccc/home.html">Home</a></li>
+         <li><a href="http://cpst.tulane.edu/~canglin/cpst240010/ccc/events.html">Events</a></li>
+         <li><a href="http://cpst.tulane.edu/~canglin/cpst240010/ccc/boxOffice.html">Box Office</a></li>
+         <li><a href="http://cpst.tulane.edu/~canglin/cpst240010/ccc/facilities.html">Facilities</a></li>
+         <li><a href="http://cpst.tulane.edu/~canglin/cpst240010/ccc/directions.html">Directions</a></li>
+         <li><a href="http://cpst.tulane.edu/~canglin/cpst240010/ccc/contactUs.html">Contact Us</a></li>
+      </ul>
+   </div>
+
+
+   <div id="leftColumn">
+      <h2>Coming in February</h2>
+      <p>February will be another banner month at the Chamberlain Civic 
+      Center with a two day performance of the Tony Award winning 
+      musical, <i>West Side Story</i> by the Broadway Touring Company. 
+      Tickets are going fast, so order yours today.</p>
+
+      <p>Celebrate Valentine's Day with the Chamberlain Symphony and 
+      their special selection of classical music for lovers. The next 
+      day, exercise your mind by attending the Charles Dickens classic, 
+      <i>The Mystery of Edwin Drood</i>.</p>
+
+      <p>Jazz lovers have a lot to celebrate in February with a visit 
+      from the <i>Jazz Masters</i> on February 10th, and then on February 
+      21st, enjoy the music of The Duke with an <i>Ellington Tribute</i> 
+      performed by the Jazz Company of Kansas City.</p>
+
+      <p>Pins, bottles, plates, and chairs are flying at the Chamberlain 
+      Civic Center in February. The <i>Taiwan Acrobats</i> return with 
+      another amazing performance. Then, on February 25th, the <i>Madtown 
+      Jugglers</i> get into the act with their unique blend of comedy, 
+      juggling, and madness.</p>
+
+      <p>Enjoy a classical brunch every Sunday in February with music 
+      provided by the <i>Carson Quartet</i>. Seating is limited, so please order 
+      your table in advance.</p>
+   </div>
+
+
+   <div id="rightColumn">
+<!--number 8, enclose table with the below div elements-->
+<div id="tBorder">
+<div id="lBorder">
+<div id="rBorder">
+<div id="bBorder">
+
+<div id="tlCorner">
+<div id="trCorner">
+<div id="blCorner">
+<div id="brCorner">
+<div id="boxContent">
+
+<!-- number 3, added class name and caption-->
+
+<table class="calendar">
+<caption>Events in February at the CCC</caption>
+
+<!--number 4, created column groups and spanning-->
+<colgroup>
+	<col class="weekdays" span="5" />
+	<col class="weekends" span="2" />
+</colgroup>
+<!--number 5, created table header row-->	
+	<thead>
+		<tr>
+		<th>Sun</th>
+
+		<th>Mon</th>
+		<th>Tue</th>
+		<th>Wed</th>
+		<th>Thu</th>
+		<th>Fr</th>
+		<th>Sat</th>
+
+		</tr>
+	</thead>
+
+<!--number 6, created a table body row for the days in the month of Feb. and number 7(h3)-->
+	<tbody>
+		<tr>
+			<td><h3>26</h3></td>
+			<td><h3>27</h3></td>
+			<td><h3>28</h3></td>
+
+			<td><h3>29</h3></td>
+			<td><h3>30</h3></td>
+			<td><h3>31</h3></td>
+<!--Number 7, part 2: marking events-->			
+			<td>
+			<h3>1</h3>
+			<dl>
+			<dt>Taiwan Acrobats</dt>
+
+			<dd>8:00pm</dd>
+			<dd>$16/$24/$36</dd>
+			</dl>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<h3>2</h3>
+
+			<dl>
+			<dt>The Carson Quartet</dt>
+			<dd>1:00pm</dd>
+			<dd>$8</dd>
+			</dl>
+			</td>
+			
+			<td><h3>3</h3></td>
+
+			<td><h3>4</h3></td>
+			<td>
+			<h3>5</h3>
+			<dl>
+			<dt>Joey Gallway</dt>
+			<dd>8:00pm</dd>
+			<dd>$16/$24/$36</dd>
+
+			</dl>
+			</td>
+
+			<td><h3>6</h3></td>
+			<td>
+			<h3>7</h3>
+			<dl>
+			<dt>West Side Story</dt>
+
+			<dd>7:00pm</dd>
+			<dd>$24/$36/$64</dd>
+			</dl>
+			</td>
+			<td>
+			<h3>8</h3>
+			<dl>
+
+			<dt>West Side Story</dt>
+			<dd>7:00pm</dd>
+			<dd>$24/$36/$64</dd>
+			</dl>
+
+			</td>
+		</tr>
+		
+		<tr>
+
+			<td>
+			<h3>9</h3>			
+			<dl>
+			<dt>The Carson Quartet</dt>
+			<dd>1:00pm</dd>
+			<dd>$8</dd>
+			</dl>
+
+			</td>
+
+			<td>
+			<h3>10</h3>
+			<dl>
+			<dt>Jazz Masters</dt>
+			<dd>8:00pm</dd>
+			<dd>$18/$24/$32</dd>
+
+			</dl>
+			</td>
+			<td><h3>11</h3></td>
+			<td><h3>12</h3></td>
+			<td>
+			<h3>13</h3>
+			<dl>
+
+			<dt>Harlem Choir</dt>
+			<dd>8:00pm</dd>
+			<dd>$18/$24/$32</dd>
+			</dl>
+			</td>
+			<td>
+			<h3>14</h3>
+
+			<dl>
+			<dt>Chamberlain Symphony</dt>
+			<dd>8:00pm</dd>
+			<dd>$18/$24/$32</dd>
+			</dl>
+			</td>
+			<td>
+
+			<h3>15</h3>
+			<dl>
+			<dt>Edwin Drood</dt>
+			<dd>8:00pm</dd>
+			<dd>$18/$24/$32</dd>
+			</dl>
+			</td>
+
+		</tr>
+		<tr>
+			<td>
+			<h3>16</h3>			
+			<dl>
+			<dt>The Carson Quartet</dt>
+			<dd>1:00pm</dd>
+			<dd>$8</dd>
+
+			</dl>
+			</td>
+
+			<td><h3>17</h3></td>
+			<td><h3>18</h3></td>
+			<td>
+			<h3>19</h3>
+			<dl>
+
+			<dt>The Yearling</dt>
+			<dd>8:00pm</dd>
+			<dd>$8/$14/$18</dd>
+			</dl>
+			</td>
+			<td><h3>20</h3></td>
+			<td>
+
+			<h3>21</h3>
+			<dl>
+			<dt>An Ellington Tribute</dt>
+			<dd>8:00pm</dd>
+			<dd>$24/$32/$48</dd>
+			</dl>
+			</td>
+
+			<td><h3>22</h3></td>
+		</tr>
+		<tr>
+			<td><h3>23</h3>		
+			<dl>
+			<dt>The Carson Quartet</dt>
+			<dd>1:00pm</dd>
+
+			<dd>$8</dd>
+			</dl>
+			</td>
+
+			<td><h3>24</h3></td>
+			<td>
+			<h3>25</h3>
+			<dl>
+
+			<dt>Madtown Jugglers</dt>
+			<dd>8:00pm</dd>
+			<dd>$12/$16/$20</dd>
+			</dl>
+			</td>
+			<td><h3>26</h3></td>
+			<td><h3>27</h3></td>
+
+			<td>
+			<h3>28</h3>
+			<dl>
+			<dt>Ralph Williams</dt>
+			<dd>8:00pm</dd>
+			<dd>$32/$48/$64</dd>
+			</dl>
+
+			</td>
+			<td><h3>1</h3></td>
+		</tr>
+		
+		
+	</tbody>
+
+</table>
+
+   </div>
+
+</body>
+
+</html>

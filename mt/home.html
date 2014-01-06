@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+<!--
+New Perspectives on HTML and XHTML
+Author: Cameron Anglin
+Date: July 26th, 2012
+Text Editor: Notepad++
+Filename: home.html
+-->
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>Mansfield Theater</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="noframes.css" rel="stylesheet" type="text/css" /> <!-- Support for web browsers that do not support frames --> 
+</head>
+
+<!-- load das frameset! (11) -->
+<script type="text/javascript">
+</script>
+
+
+<frameset rows="180, *" >
+  <!-- Logo frame 1 of 4 (3)-->
+  <frame src="head.html" scrolling="no" marginheight="0" noresize="noresize" name="logo"
+  id="logo" /><!-- Menu selection frame (6) -->
+
+  <frameset cols="150, 65%, *">
+    <!-- List of Links frame frame 2 of 4-->
+    <frame src="links.html" noresize="noresize" name="links" id="links" />
+    <!-- Manfield Theater Web Pages frame 3 of 4 -->
+    <frame src="mans.html"  noresize="noresize" name="mans" id="mans" />
+    <!-- some other frame to make 4 :) frame 4 of 4 -->
+    <frame src="related.html" noresize="noresize" name="related" id="related" />
+  </frameset>
+
+  <noframes>
+    <!-- This is for old browsers (10) -->
+
+    <body>
+      <img src="tempest.jpg" alt="tempest" />
+
+      <p>This site featues the playlist of William Shakespeares play "The Tempest".</p>
+	  <!-- could make a big table or something here.... -->
+  <ul>
+    <li><a href="http://cpst.tulane.edu/~canglin/cpst240010/mt/home.html" target="_top">Home</a></li>
+
+    <li><a href="tempa1s1.html">Act I Scene I</a></li>
+
+    <li><a href="tempa1s2.html">Act I Scene II</a></li>
+
+    <li><a href="tempa2s1.html">Act II Scene I</a></li>
+
+    <li><a href="tempa2s2.html">Act II Scene II</a></li>
+
+    <li><a href="tempa3s1.html">Act III Scene I</a></li>
+
+    <li><a href="tempa3s2.html">Act III Scene II</a></li>
+	
+	<li><a href="tempa3s3.html">Act III Scene III</a></li>
+
+    <li><a href="tempa4s1.html">Act IV Scene I</a></li>
+
+    <li><a href="tempa5s1.html">Act V Scene 1</a></li>
+
+    <li><a href="other.html" target="_self">Related Links</a></li>
+  </ul>
+    </body>
+  </noframes>
+</frameset>
+</html>

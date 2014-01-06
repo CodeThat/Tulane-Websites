@@ -1,0 +1,108 @@
+/* 
+Requirement (2)
+New Perspectives on HTML and XHTML
+Author: Cameron Anglin
+Date: July 26th, 2012
+Text Editor: Notepad++
+Filename: style.css
+*/
+
+body,html
+{
+	height:100%;
+	margin:0;
+	width:100%;
+}
+
+/* Style for pages containing screenplay text */
+#content-container
+{
+	background-image:url(seamlesspaper1.jpg);
+	background-repeat:repeat;
+	color:#000;
+	float:left;
+	width:100%;
+}
+
+#content
+{
+	clear:left;
+	display:inline;
+	float:left;
+	margin:10px;
+	padding:20px 20px 20px 100px;
+	width:60%;
+}
+
+#right
+{
+	background-color:#E5E4D7;
+}
+
+img
+{
+	border: 1px solid #000;
+	margin:40px 40px 20px;
+}
+
+#text
+{
+	float:left;
+	margin:5px;
+	padding:25px;
+}
+
+h1
+{
+	text-align:center;
+}
+
+/* Style for far right column */
+#reltxt
+{
+	overflow: hidden;
+	color: #E1E3AC;	
+}
+
+#reltxt p
+{
+	margin:20px;
+}
+
+#reltxt h2
+{
+	text-align:center;
+}
+
+/* Make first letter of right column text big via image */
+.firstletter  
+{
+	width: 70px;
+	height: 89px;
+	float: left;
+	display: block;
+	text-indent: -999em;
+	background: url(T-cap.png);
+	margin: 0 8px 8px 0; 
+}
+
+/* Style for middle content area when viewing "index" page */		
+#mans 
+{
+	background-color: #E1E3AC;
+	margin: 0px;           /* Fix whitespace issue in IE */
+	border: 0px;			
+	height: 100%;
+	overflow: auto; /* hidden removes scroll bars on content pages, arg! */
+}	
+
+#mans img 
+{
+	border: 1px solid #000;
+}
+
+#mans p 
+{
+	margin: 5px 5px 5px 5px;
+	padding: 5px 5px 5px 20px;
+}
