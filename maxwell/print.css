@@ -1,0 +1,21 @@
+/* print.css
+   Cameron Anglin
+*/
+
+@media print
+{
+
+/* hide these when printing */
+#header,#section-navigation,#navigation-container,#footer,#content ul,#navigation ul,#content h3,#photos img,a:link,a:visited,a:hover,a:active , img
+{
+	display:none;
+}
+
+/* change font to printable font */
+p 
+{
+	font-family:times,serif;
+	font-size:10px;
+}   
+
+}

@@ -1,0 +1,193 @@
+/* Maxwell Scientific - style.css 
+   Cameron Anglin
+   
+   Unique use of styles (4) 
+*/
+
+body, html 
+{
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+
+#container
+{
+	margin: 0 auto;
+	width: 100%;
+	background: #fff;
+}
+
+#header
+{
+	background-color: #003333;
+	padding: 20px;
+}
+
+#header h1 
+{ 
+	margin: 0;
+}
+
+#navigation
+{
+	float: left;
+	width: 100%;
+	background-color: #999999;
+}
+
+#navigation ul
+{
+	margin: 0;
+	padding: 0;
+}
+
+#navigation ul li
+{
+	list-style-type: none;
+	display: inline;
+}
+
+#navigation li a
+{
+	display: block;
+	float: left;
+	padding: 5px 10px;
+	color: #fff;
+	text-decoration: none;
+	border-right: 1px solid #fff;
+}
+
+#navigation li a:hover { background: #003333 }
+
+#content-container
+{
+	float: left;
+	width: 100%;
+	background: #fff url(background.gif) repeat-y 68% 0;
+}
+
+#content
+{
+	clear: left;
+	float: left;
+	width: 60%;
+	padding: 20px 0;
+	margin: 0 0 0 4%;
+	display: inline;
+}
+
+#content h2 
+{
+	margin: 0;
+	font-family: ‘Arial Black’, Gadget, sans-serif;
+}
+
+#content
+{
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+#content img 
+{
+	border: 0px;		
+}
+
+#right
+{
+	float: right;
+	width: 26%;
+	padding: 20px 0;
+	margin: 0 3% 0 0;
+	display: inline;
+}
+
+#right h3 { margin: 0; }
+
+#right img 
+{
+	border: 1px solid #000;
+}
+
+#footer
+{
+	clear: left;
+	background: #ccc;
+	text-align: right;
+	padding: 20px;
+	height: 1%;
+}
+
+#footer p
+{
+	position: absolute;
+	left: 5%;
+}
+
+/* products box styling */
+#products
+{
+	margin: 5px 5px 5px 5px;
+}
+
+.item 
+{
+	display: block;
+	float: left;
+	border-style: solid;
+	border-color: #343838;
+	width: 180px;
+	margin: 5px 5px 5px 5px;
+	height: 348px;
+	padding: 0px 3px 0px 3px;
+	background-color: #669999;
+}
+
+.item h3
+{
+	text-align:center;
+}
+
+.item p
+{
+	margin: 5px 5px 5px 5px;
+	padding-left: 5px;
+	text-align: center;
+}
+
+.item b
+{
+	text-align: center;
+}
+
+ul
+{
+	list-style: none;
+}
+
+/* links */
+a:link { text-decoration:none; color:#153E7E; }
+a:visited { text-decoration:none; }
+a:hover { text-decoration:none; color:#000; }
+a:active { text-decoration:none; }
+
+/* blockquoute comments style */
+blockquote 
+{ 
+	width: 300px;
+	float: right;
+}
+
+
+/* front page images */
+#frontPics
+{
+	float: left;
+	margin: 5px 5px 5px 5px;
+	padding: 5px 5px 5px 5px;
+}
+
+#frontPics img 
+{
+		border: 1px solid #000;
+}

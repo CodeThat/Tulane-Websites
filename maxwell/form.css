@@ -1,0 +1,26 @@
+/* oform.css */ 
+
+
+/* label class styles */
+label.blocklabel {display: block; position: relative; margin: 12px 0px}
+label.blockLabel input {position: absolute; left: 200px}
+
+
+/* color form asterisk */
+#cOrder span {color: #ff0000}
+p span {color: #ff0000}
+
+label.indentLabel {margin-left: 150px}
+
+/* set width of input boxes */
+#firstName, #lastName, #street {width: 25em}
+#phone, #city {width: 10em}
+#state {width: 3em}
+#zip {width: 7em}
+#email {width: 20em}
+
+/* format fielset  */
+fieldset {margin-bottom: 10px; padding: 10px; background-color: rgb(237, 233, 223)}
+
+/* Credit Card style */
+#cardHolder, #cardNumber {width: 25em}

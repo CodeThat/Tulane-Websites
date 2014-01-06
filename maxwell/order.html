@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+New Perspectives on HTML and XHTML
+Author: Cameron Anglin
+Date: August 2nd, 2012
+Text Editor: Notepad++
+Filename: order.html
+-->
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>Millenium Computers</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="author" content="Cameron Anglin" />
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <link rel="stylesheet" type="text/css" href="form.css" />
+</head>
+
+<body>
+  <div id="container">
+    <div id="header">
+      <h1><!-- header logo -->
+       <img src="images/mwslogo.gif" alt="maxwell" /></h1>
+    </div>
+
+    <div id="navigation">
+      <ul>
+        <li><a href="home.html">Home</a></li>
+
+        <li><a href="astronomy.html">Astronomy</a></li>
+
+        <li><a href="chemistry.html">Chemistry</a></li>
+
+        <li><a href="electronics.html">Electronics</a></li>
+
+        <li><a href="engineering.html">Engineering</a></li>
+
+        <li><a href="physics.html">Physics</a></li>
+
+        <li><a href="order.html">Order</a></li>
+      </ul>
+    </div>
+
+    <div id="content-container">
+      <div id="content">
+        <h2>Customer Order Form</h2>
+
+        <p style="text-align: right"><span>*</span>Indicates a required field.</p>
+        <!-- Customer order form -->
+
+        <form id="cOrder" action="http://www.mill_computers.com/orders/process.cgi"
+        method="post">
+          <!-- form action -->
+
+          <fieldset id="customer">
+            <legend>Customer Informatiom:</legend> <label class="blockLabel">First
+            Name<span>*</span> <input type="text" name="firstName" id=
+            "firstName" /></label><br />
+            <br />
+            <label class="blockLabel">Last Name<span>*</span> <input type="text" name=
+            "lastName" id="lastName" /></label><br />
+            <br />
+            <label class=
+            "blockLabel">Phone<span>*</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+            <!-- help align boxes -->
+             <input type="text" name="phone" id="phone" /></label><br />
+            <br />
+            <label class="blockLabel">Street Address<span>*</span> <input type="text" id=
+            "street" name="street" /></label><br />
+            <br />
+            <label class="identLabel">City<span>*</span>&nbsp;&nbsp; <input type="text" id="city"
+            name="city" />&nbsp;&nbsp;</label>
+            <label>State<span>*</span> <input type="text" id="state" name="state"
+            maxlength="2" />&nbsp;&nbsp; 
+            <!-- size restriction in state --></label> <label>ZIP<span>*</span>
+            <input type="text" id="zip" name="zip" size="10" /> 
+            <!-- size restriction on zip --></label><br />
+			<br /><!-- size restrict email -->
+			<label class="blockLabel">Email<span>*</span><input type="text" name="email" id=
+            "email" size="25" /></label>
+          </fieldset>
+
+          <fieldset id="credit">
+            <!-- Credit card info -->
+            <legend>Payment Information</legend> <label class="blocklabel">Credit Card
+            Number<span>*</span> <input type="password" name="number" id="number" size=
+            "16" /><!-- hidden text and size restricted --></label> <label class=
+            "blocklabel">Credit Card<span>*</span> <select id="creditCard" name=
+            "creditCard">
+              <option value="Amex">
+                American Express
+              </option>
+
+              <option value="Disc">
+                Discover
+              </option>
+
+              <option value="MC">
+                Master Card
+              </option>
+
+              <option value="Visa">
+                Visa
+              </option>
+            </select></label> <label class="blocklabel">Expiration Date<span>*</span>
+            <select id="expMonth" name="expMonth">
+              <!-- credit card has a selection list -->
+
+              <option value="01">
+                January (01)
+              </option>
+
+              <option value="02">
+                February (02)
+              </option>
+
+              <option value="03">
+                March (03)
+              </option>
+
+              <option value="04">
+                April (04)
+              </option>
+
+              <option value="05">
+                May (05)
+              </option>
+
+              <option value="06">
+                June (06)
+              </option>
+
+              <option value="07">
+                July (07)
+              </option>
+
+              <option value="08">
+                August (08)
+              </option>
+
+              <option value="09">
+                September (09)
+              </option>
+
+              <option value="10">
+                October (10)
+              </option>
+
+              <option value="11">
+                November (11)
+              </option>
+
+              <option value="12">
+                December (12)
+              </option>
+            </select> <select id="expYear" name="expYear">
+              <option value="2011">
+                2011
+              </option>
+
+              <option value="2012">
+                2012
+              </option>
+
+              <option value="2013">
+                2013
+              </option>
+
+              <option value="2014">
+                2014
+              </option>
+
+              <option value="2015">
+                2015
+              </option>
+            </select></label>
+          </fieldset>
+
+          <fieldset id="order">
+            <!-- computer component selection -->
+            <legend>Order Information:</legend> <label for="category">Category</label>
+            <select name="category" id="category">
+              <!-- select clock speed -->
+
+              <option value="astronomy">
+                Astronomy
+              </option>
+
+              <option value="chemistry">
+                Chemistry
+              </option>
+
+              <option value="electronics">
+                Electronics
+              </option>
+
+              <option value="engineering">
+                Engineering
+              </option>
+
+              <option value="physics">
+                Physics
+              </option>
+            </select>&nbsp; <label for="stockNumber">Stock Number</label> <select name=
+            "stockNumber" id="stockNummber">
+              <!-- mem speed -->
+
+              <option value="RK01-085">
+                RK01-085
+              </option>
+
+              <option value="ND25-100">
+                ND25-100
+              </option>
+
+              <option value="CG13-810">
+                CG13-810
+              </option>
+
+              <option value="RF02-421">
+                RF02-421
+              </option>
+
+              <option value="CP21-789">
+                CP21-789
+              </option>
+
+              <option value="SM4-411">
+                SM4-411
+              </option>
+
+              <option value="SM5-411">
+                SM5-411
+              </option>
+
+              <option value="LMS01-101">
+                LMS01-101
+              </option>
+
+              <option value="LHP1-700">
+                LHP1-700
+              </option>
+
+              <option value="PT40-232">
+                PT40-232
+              </option>
+
+              <option value="TT10-001">
+                TT10-001
+              </option>
+
+              <option value="CH2000-100">
+                CH2000-100
+              </option>
+
+              <option value="SM4-411">
+                SM4-411
+              </option>
+
+              <option value="EZ01-941">
+                EZ01-941
+              </option>
+
+              <option value="WK24-811">
+                WK24-811
+              </option>
+
+              <option value="EL1-001">
+                EL1-001
+              </option>
+
+              <option value="EL1-0021">
+                EL1-002
+              </option>
+
+              <option value="EL1-003">
+                EL1-003
+              </option>
+
+              <option value="EL1-004">
+                EL1-004
+              </option>
+
+              <option value="EL2-001">
+                EL2-001
+              </option>
+
+              <option value="EL3-017">
+                EL3-017
+              </option>
+
+              <option value="EL5-001">
+                EL5-001
+              </option>
+
+              <option value="EL3-010">
+                EL3-010
+              </option>
+
+              <option value="DFG4-412">
+                DFG4-412
+              </option>
+
+              <option value="ST1-003">
+                ST1-003
+              </option>
+
+              <option value="BS40-232">
+                BS40-232
+              </option>
+
+              <option value="BS40-232">
+                BS40-232
+              </option>
+
+              <option value="TC24-981">
+                TC24-981
+              </option>
+
+              <option value="VI-322">
+                VI-322
+              </option>
+
+              <option value="AD10-710">
+                AD10-710
+              </option>
+
+              <option value="MDR1-001">
+                MDR1-001
+              </option>
+
+              <option value="PF2-001">
+                PF2-001
+              </option>
+
+              <option value="LK100-001">
+                LK100-001
+              </option>
+
+              <option value="MIS24-056">
+                MIS24-056
+              </option>
+
+              <option value="MI24-057">
+                MI24-057
+              </option>
+
+              <option value="HK03-001">
+                HK03-001
+              </option>
+
+              <option value="MI24-072">
+                MI24-072
+              </option>
+            </select>&nbsp; <!-- optional components check --><br />
+            <br />
+          </fieldset>
+
+          <fieldset id="shipping">
+            <legend>Shipping Options</legend><!-- shipping options-->
+             <label><input type="radio" id="ground" name="ground" /> USPS Ground (7-10
+            Business Days) - $7.00</label><br />
+            <label><input type="radio" id="air" name="air" /> Air (2-3 Business
+            Days) - $15.00</label><br />
+            <label><input type="radio" id="nextDay" name="nextyDay" /> Next Day
+            Express - $25.00</label>
+          </fieldset>
+
+          <fieldset id="comments">
+            <!-- comments text area -->
+            <legend>Comments</legend> <label><input type="checkbox" id="comment" name=
+            "comment" /> would like to receive special offers from us?</label>
+            <label for="comments" class="blocklabel">Comments</label> 
+            <textarea id="feedback" name="feedback" rows="5" cols="50">
+</textarea>
+          </fieldset><!-- Buttons to send and cancel -->
+
+          <fieldset id="buttons">
+            <input type="submit" value="Submit" /> <input type="reset" value="Cancel" />
+            <input type="submit" value="Call Me" />
+          </fieldset>
+        </form>
+      </div>	  
+      <div id="footer">
+        <a href=
+        "mailto:canglin@tulane.edu?Subject=Maxwell%20Scientific&amp;Body=You%20Have%20a%20Message">
+        canglin@tulane.edu</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
